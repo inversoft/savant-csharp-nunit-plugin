@@ -55,10 +55,10 @@ release = loadPlugin(id: "org.savantbuild.plugin:release-git:1.0.0")
 // Plugin settings
 groovy.settings.groovyVersion = "2.4"
 groovy.settings.javaVersion = "1.8"
-groovy.settings.jarManifest["Savant-Plugin-Class"] = "CSharpNUnitPlugin"
+groovy.settings.jarManifest["Savant-Plugin-Class"] = "org.savantbuild.plugin.csharp.CSharpNUnitPlugin"
 groovyTestNG.settings.groovyVersion = "2.4"
 groovyTestNG.settings.javaVersion = "1.8"
-idea.settings.imlFile = "java-testng-plugin.iml"
+idea.settings.imlFile = "csharp-nunit-plugin.iml"
 idea.settings.moduleMap = [
     "org.savantbuild:savant-core:${savantVersion}"                 : "savant-core",
     "org.savantbuild:savant-dependency-management:${savantVersion}": "savant-dependency-management",

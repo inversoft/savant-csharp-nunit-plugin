@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific
  * language governing permissions and limitations under the License.
  */
-package org.savantbuild.plugin.csharp.testng
+package org.savantbuild.plugin.csharp.nunit
 
 import java.nio.file.Files
 import java.nio.file.Path
