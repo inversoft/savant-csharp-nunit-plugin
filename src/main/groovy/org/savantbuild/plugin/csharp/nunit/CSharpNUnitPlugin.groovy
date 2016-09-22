@@ -118,7 +118,7 @@ class CSharpNUnitPlugin extends BaseGroovyPlugin {
       command << "--where" << attributes.get("where")
     }
 
-    command << "${project.name}-test-${project.version}.dll"
+    command << "${project.name}.Test.dll"
     output.debugln("Running command [%s]", command)
 
     Process process = command.execute(null, project.directory.resolve("build/test").toFile())
