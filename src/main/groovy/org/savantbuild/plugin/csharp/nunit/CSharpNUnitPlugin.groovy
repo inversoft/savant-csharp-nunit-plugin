@@ -39,8 +39,8 @@ class CSharpNUnitPlugin extends BaseGroovyPlugin {
 
   public final String NUNIT_ERROR_MESSAGE = "You must create the file [~/.savant/plugins/org.savantbuild.plugin.csharp-nunit.properties] " +
       "that contains the location of the NUnit installation that will be used to run the tests. These properties look like this:\n\n" +
-      "  2.6=~/dev/nunit-2.6.3\n" +
-      "  3.4=~/dev/nunit-3.4.0\n"
+      "  2.6.3=/Users/foobar/dev/nunit-2.6.3\n" +
+      "  3.4.1=/Users/foobar/dev/nunit-3.4.0\n"
 
   Properties csharpProperties
 
@@ -160,7 +160,7 @@ class CSharpNUnitPlugin extends BaseGroovyPlugin {
 
     String nunitHome = nunitProperties.getProperty(settings.nunitVersion)
     if (!nunitHome) {
-      fail("No NUnit installation is configured for version [%s].\n\n[%s]", settings.sdkVersion, NUNIT_ERROR_MESSAGE)
+      fail("No NUnit installation is configured for version [%s].\n\n[%s]", settings.nunitVersion, NUNIT_ERROR_MESSAGE)
     }
 
     // Try 2.x

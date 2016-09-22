@@ -15,7 +15,7 @@
  */
 savantVersion = "1.0.0"
 
-project(group: "org.savantbuild.plugin", name: "csharp-nunit", version: "1.0.0", licenses: ["ApacheV2_0"]) {
+project(group: "org.savantbuild.plugin", name: "csharp-nunit", version: "0.1.0", licenses: ["ApacheV2_0"]) {
   workflow {
     standard()
   }
