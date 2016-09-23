@@ -100,8 +100,8 @@ class CSharpNUnitPlugin extends BaseGroovyPlugin {
 
     List<String> command = [monoPath.toString(), nunitConsolePath.toString()]
 
-    if (settings.nunitArguments != "") {
-      command << settings.nunitArguments
+    if (settings.nunitArguments.size() > 0) {
+      command.addAll(settings.nunitArguments)
     }
 
     command << "--result=${project.directory.resolve(settings.xmlReportFile).toAbsolutePath().toString()}"

@@ -30,7 +30,7 @@ class CSharpNUnitSettings {
       [group: "test-runtime", transitive: true, fetchSource: false, transitiveGroups: ["provided", "compile", "runtime"]]
   ]
 
-  String nunitArguments = ""
+  List<String> nunitArguments = []
 
   String nunitVersion
 
